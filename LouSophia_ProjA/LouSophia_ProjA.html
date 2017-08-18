@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project A</title>
+  </head>
+	<!--	Create the HTML5 'canvas' element in which we will run WebGL
+	-->
+  <body onload="main()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+
+    </canvas>
+
+	<p>	 
+
+		<!--BUTTONS: commands below create HTML push-buttons with labels
+			Spin <<, runStop, and Spin >>.  
+		When users click the button, HTML calls JavaScript functions
+			"spinDown()", "runStop()" and "spinUp()"   -->
+     	<!-- <button type="button" onclick="spinDown()">Decrease Bird Speed </button> 
+        --> 
+	<h3> For Instructions Press Enter and Scroll Down </h3> 
+	  <button type="button" onclick="runStop()">Run/Stop</button>
+      <button type="button" onclick="spinUp()">Change Bird and Caterpillar Speed  </button>
+    </p>
+    <p>
+    	<div id= 'Instructions'> </div>
+    </p> 
+
+	<!--	Load in the JavaScript libraries supplied by our textbook 
+			(Matsuda et al., 2013 WebGL Programming Guide) that help us
+			with WebGL programming:
+	-->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-mod.js"></script>
+	<!--	Finally, load in our own JavaScript program file.
+	-->
+    <script src="LouSophia_ProjA.js"></script>
+  </body>
+</html>
